@@ -1,0 +1,15 @@
+h3{
+    padding: 10px 0;
+}
+
+.collapse-item{
+    height: 0px;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.show-item{
+    transition: 2s;
+   
+  
+}
