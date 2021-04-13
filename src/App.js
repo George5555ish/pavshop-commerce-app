@@ -49,17 +49,31 @@ import Checkout from './components/Checkout/Checkout';
 import About from './components/About/About';
 import ContactUs from './components/ContactUs/Contactus';
 
+
+
+
 const App = () => {
-
-
-    
 
     const [currentWatches, setCurrentWatches] = useState('Featured');
     const [showPopUp, setShowPopUp] = useState(true);
     const [showLoder, setShowLoder] = useState(true);
 
+   
 
 
+    // const is404 = location.pathname !== "singleproduct" || location.pathname !== "about" || location.pathname !== "blog" ||
+    // location.pathname !== "cart" || location.pathname !== "checkout" || location.pathname !== "contactus" || location.pathname !== "header" 
+    // || location.pathname !== "shop" || location.pathname !== "/";
+
+
+
+    // if (is404){
+    //   history.push("/404");
+    // }
+
+
+
+   
     const handleShowPopUp = (e) => {
       e.preventDefault();
       setShowPopUp(!showPopUp);
@@ -72,6 +86,8 @@ const App = () => {
     }
 
     useEffect(() => {
+
+     
       console.log(showPopUp);
       setShowLoder(false);
 
@@ -81,6 +97,8 @@ const App = () => {
 
       <Router>
         <div> 
+
+      
         {     showLoder &&  <div className="loder"></div>}
              <Header />
      
@@ -392,6 +410,8 @@ const App = () => {
     </div>
     </Route>
    
+
+
    <Route exact path="/singleproduct">
             <SingleProduct />
    </Route>
@@ -399,6 +419,13 @@ const App = () => {
    <Route exact path="/blog">
             <Blog />
    </Route>
+
+          <Route exact path="/404">
+    <div>
+      404 Not Found
+    </div>
+  </Route>
+            
    <Route exact path="/shop">
             <Shop />
    </Route>
