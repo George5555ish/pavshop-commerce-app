@@ -4,3 +4,6 @@ It demonstrates a knowledge of react hooks, webpage design and functionality, an
 
 ## Demo
 This project is hosted here: https://hopeful-lalande-3d524b.netlify.app/
+
+## Portfolio
+You can also check out my portfolio website here: https://georgeu-portfolio.netlify.app/
